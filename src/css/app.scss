@@ -1,0 +1,306 @@
+// app global css in SCSS form
+// app global css in SCSS form
+
+
+* {
+
+    box-sizing: border-box;
+  }
+  body{
+    background-color: #F0F2F5;
+overflow-x: hidden;
+
+  }
+  .logo{
+    margin-right: 10px;
+    cursor: pointer;
+  
+  }
+  
+  .logo img {
+    width: 40px;
+  }
+  
+  
+  .header{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  
+  }
+
+
+  
+  .header-left,
+  .header-mid,
+  .header-right{
+    display: flex;
+    align-items: center;
+  }
+  
+  .header-mid{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+  
+  .header-right{
+    justify-content: flex-end;
+  }
+  
+  .header{
+    -webkit-box-shadow: 0px 4px 34px -2px rgba(0,0,0,0.08);
+  -moz-box-shadow: 0px 4px 34px -2px rgba(0,0,0,0.08);
+  box-shadow: 0px 4px 34px -2px rgba(0,0,0,0.08);
+  }
+  
+  
+  
+  .header-mid svg{
+    opacity: 0.7;
+  }
+  
+  .q-avatar{
+    cursor: pointer;
+  }
+  
+  .q-item{
+    border-radius: 6px;
+  
+  }
+  
+  
+  .header-mid .q-item:hover{
+    background-color: rgb(231, 231, 231);
+  }
+  
+  .active svg{
+    fill: #1877F2;
+    color: #1877F2;
+    opacity: 1;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+
+  
+
+  .tab .nonActiveSVG{
+    display: block;
+  }
+
+  .tab .activeSVG{
+    display: none;
+  }
+
+  .active .activeSVG{
+    display: flex;
+  }
+  .active .nonActiveSVG{
+    display: none;
+  }
+
+
+  
+  .active::before{
+  content: "";
+  position: absolute;
+  bottom: -8px;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background-color: #1877F2;
+  }
+  
+
+  .active .q-badge{
+    display: none;
+  }
+  
+  .search{
+  display: flex;
+  align-items: center;
+  border-radius: 50px;
+  height: 44px;
+  
+  padding-left: 10px;
+  }
+  
+  .search input{
+    border: none;
+    width: 100%;
+    height: 100%;
+    border-radius: 50px;
+    margin-left: 10px;
+  }
+  
+  
+  .search input:focus{
+    border: none;
+    outline: none;
+  }
+  
+  .search input{
+    font-size: 15px;
+  }
+  .search .q-icon{
+    opacity: 0.6;
+    
+  }
+  .dotF{
+    display: flex;
+    align-items: center;
+    color: #1877F2;
+    font-weight: 400;
+    font-size: 13px;
+    margin-top: 1px;
+  }
+  
+  .dotF .q-icon{
+  
+    margin-right: 5px;
+  
+  }
+  .nnn img{
+    border-radius: 7px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+  }
+  
+  
+  .nnn{
+    width: 110px;
+  }
+  
+  .bbb{
+    line-height: 1.4 !important;
+  }
+  .pagesF{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+  }
+
+  
+
+
+
+
+
+
+
+  .right-scroll
+  {
+    
+  
+   position: fixed;
+   padding-top: 80px;
+   top: 0;
+   right:0;
+   height: 100vh;
+   overflow-y: hidden;
+   overflow-x: hidden;
+
+  }
+
+
+
+  
+  .left-scroll
+  {
+    
+  
+   position: fixed;
+   padding-top: 80px;
+   top: 0;
+   height: 100vh;
+   overflow-y: hidden;
+   overflow-x: hidden;
+  }
+
+
+
+.left-scroll:hover{
+  overflow-y: scroll;
+}
+
+.right-scroll:hover{
+  overflow-y: scroll;
+}
+  
+  
+
+
+  .left-scroll::-webkit-scrollbar {
+    width: 7px;
+  }
+  .left-scroll::-webkit-scrollbar-thumb {
+    width: 50px;
+    height: 50px;
+    background-color: rgb(160, 160, 160);
+  }
+  .left-scroll::-webkit-scrollbar-track {
+    background: #fff;
+  }
+
+
+
+
+
+
+  
+  .right-scroll::-webkit-scrollbar {
+    width: 7px;
+  }
+  .right-scroll::-webkit-scrollbar-thumb {
+    width: 50px;
+    height: 50px;
+    background-color: rgb(160, 160, 160);
+  }
+  .right-scroll::-webkit-scrollbar-track {
+    background: #fff;
+    width: 3px;
+    
+  }
+
+
+
+  
+
+
+  @media (max-width:1105px){
+    .header{
+      display: grid;
+      grid-template-columns: 250px 1fr 1fr;
+    
+    }
+   
+    }
+
+    @media (max-width:925px){
+      .header{
+        display: grid;
+        grid-template-columns: 170px 1fr 1fr;
+      
+      }
+     
+      }
+
+      @media (max-width:789px){
+        .header{
+          display: grid;
+          grid-template-columns: 1fr 1fr;
+        
+        }
+       .header-mid{
+         display: none;
+       }
+        }
+
+
+
+        
