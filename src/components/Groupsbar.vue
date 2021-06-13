@@ -137,6 +137,8 @@ export default {
     width: 50px;
     height: 50px;
     background-color: rgb(160, 160, 160);
+    
+    
   }
   .groupsBar::-webkit-scrollbar-track {
     background: #fff;

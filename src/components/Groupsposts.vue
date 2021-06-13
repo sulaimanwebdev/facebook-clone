@@ -35,7 +35,7 @@
             How is the design?
         </div>
         <div class="fullimgCont">
-<img src="../assets/ui1.png" alt="Image"> 
+<img src="../assets/ui1.jpg" alt="Image"> 
 
        </div>
         <div class="bottom">
@@ -115,7 +115,7 @@
 
         <q-item-section>
           <q-item-label class="text-weight-bold"><span style="opacity:0.9;">Jhon Doe <span style="font-weight:300;">asked a question <q-icon name="help" class="q-ml-xs" size="18px;" style="color:#F35369;"/> in</span> Daily Dev</span></q-item-label>
-          <q-item-label caption lines="1">7 Hours <q-icon name="fas fa-circle" size="3px" color="black" class="q-mx-xs q-mr-sm" style="opacity:0.7;"/> <q-icon name="group" color="black" style="opacity:0.7; font-size:18px;"/></q-item-label>
+          <q-item-label caption lines="1">13 Hours <q-icon name="fas fa-circle" size="3px" color="black" class="q-mx-xs q-mr-sm" style="opacity:0.7;"/> <q-icon name="group" color="black" style="opacity:0.7; font-size:18px;"/></q-item-label>
         </q-item-section>
 
         <q-item-section side>
@@ -137,11 +137,11 @@
                                <q-avatar size="45px"   text-color="primary" icon="thumb_up"/>
                                 <q-avatar size="45px"   text-color="red" icon="favorite"/>
                                  <q-avatar size="45px"   text-color="yellow" icon="emoji_emotions"/>
-                                 <span class="likes">45k</span>
+                                 <span class="likes">76k</span>
 
                 </div>
                 <div class="ffB">
-                   <span style="opacity:0.8;">7K answers</span>
+                   <span style="opacity:0.8;">38K answers</span>
                 </div>
             </div>
         </div>
@@ -178,6 +178,169 @@
 
 
 
+
+
+
+
+<div class="postCont" >
+        <div class="top ">
+           <q-item  clickable class="" >
+        <div class="imgCont">
+            
+            <img src="../assets/man1.jpg">
+           
+        </div>
+        
+
+        <q-item-section>
+          <q-item-label class="text-weight-bold" >Andrew <q-icon name="navigate_next"  style="color:black; font-size:20px; verticle-align:middle;"/> UI/UX Designing</q-item-label>
+          <q-item-label caption lines="1">2 Hours <q-icon name="fas fa-circle" size="3px" color="black" class="q-mx-xs q-mr-sm" style="opacity:0.7;"/> <q-icon name="group" color="black" style="opacity:0.7; font-size:18px;"/></q-item-label>
+        </q-item-section>
+
+        <q-item-section side>
+          <q-icon name="more_horiz" color="black" style="opacity:0.8;"/>
+
+        </q-item-section>
+       
+      </q-item>
+
+        </div>
+
+        
+        <div class="fullimgCont">
+<img src="../assets/ui3.webp" alt="Image"> 
+
+       </div>
+        <div class="bottom">
+            <div class="flex1">
+                <div class="ffA">
+                               <q-avatar size="45px"   text-color="primary" icon="thumb_up"/>
+                                <q-avatar size="45px"   text-color="red" icon="favorite"/>
+                                 <q-avatar size="45px"   text-color="yellow" icon="emoji_emotions"/>
+                                 <span class="likes">15K</span>
+
+                </div>
+                <div class="ffB">
+                   <span style="opacity:0.8;">8K comments</span>
+                </div>
+            </div>
+        </div>
+      
+       <q-separator class="q-mx-md"/>
+      <div class="interaction">
+<q-item clickable v-ripple>
+       <div class="iitemlfex">
+           <q-avatar icon="thumb_up_off_alt" size="50px" style="opacity:0.8;"/> 
+           <div class="content text-weight-bold" style="opacity:0.7;">Like</div>
+       </div>
+      </q-item>
+
+      <q-item clickable v-ripple>
+       <div class="iitemlfex">
+          <q-avatar icon="chat_bubble_outline" size="50px" style="opacity:0.8;"/>
+           <div class="content text-weight-bold" style="opacity:0.7;">Comment</div>
+       </div>
+      </q-item>
+
+      <q-item clickable v-ripple>
+       <div class="iitemlfex">
+            <q-avatar icon="share" size="50px" style="opacity:0.8;"/>
+           <div class="content text-weight-bold" style="opacity:0.7;">Share</div>
+       </div>
+      </q-item>
+
+
+      </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="postCont" >
+        <div class="top ">
+           <q-item  clickable class="" >
+        <div class="imgCont">
+            
+            <img src="../assets/smith.jpg">
+           
+        </div>
+        
+
+        <q-item-section>
+          <q-item-label class="text-weight-bold" >Smith <q-icon name="navigate_next"  style="color:black; font-size:20px; verticle-align:middle;"/>Cryptocurrency
+</q-item-label>
+          <q-item-label caption lines="1">18 Hours <q-icon name="fas fa-circle" size="3px" color="black" class="q-mx-xs q-mr-sm" style="opacity:0.7;"/> <q-icon name="group" color="black" style="opacity:0.7; font-size:18px;"/></q-item-label>
+        </q-item-section>
+
+        <q-item-section side>
+          <q-icon name="more_horiz" color="black" style="opacity:0.8;"/>
+
+        </q-item-section>
+       
+      </q-item>
+
+        </div>
+
+        
+        <div class="fullimgCont">
+<img src="../assets/bitcoin.png" alt="Image"> 
+
+       </div>
+        <div class="bottom">
+            <div class="flex1">
+                <div class="ffA">
+                               <q-avatar size="45px"   text-color="primary" icon="thumb_up"/>
+                                <q-avatar size="45px"   text-color="red" icon="favorite"/>
+                                 <q-avatar size="45px"   text-color="yellow" icon="emoji_emotions"/>
+                                 <span class="likes">43K</span>
+
+                </div>
+                <div class="ffB">
+                   <span style="opacity:0.8;">32K comments</span>
+                </div>
+            </div>
+        </div>
+      
+       <q-separator class="q-mx-md"/>
+      <div class="interaction">
+<q-item clickable v-ripple>
+       <div class="iitemlfex">
+           <q-avatar icon="thumb_up_off_alt" size="50px" style="opacity:0.8;"/> 
+           <div class="content text-weight-bold" style="opacity:0.7;">Like</div>
+       </div>
+      </q-item>
+
+      <q-item clickable v-ripple>
+       <div class="iitemlfex">
+          <q-avatar icon="chat_bubble_outline" size="50px" style="opacity:0.8;"/>
+           <div class="content text-weight-bold" style="opacity:0.7;">Comment</div>
+       </div>
+      </q-item>
+
+      <q-item clickable v-ripple>
+       <div class="iitemlfex">
+            <q-avatar icon="share" size="50px" style="opacity:0.8;"/>
+           <div class="content text-weight-bold" style="opacity:0.7;">Share</div>
+       </div>
+      </q-item>
+
+
+      </div>
+    </div>
 
 
 
@@ -235,12 +398,13 @@ margin-top: 30px;
 
 .fullimgCont{
     width: 100%;
+   
 
 }
 .fullimgCont img{
     width: 100%;
     height: 100%;
-    object-position: top center;
+    object-position: center;
     object-fit: cover;
 }
 
@@ -310,4 +474,8 @@ z-index: 2;
 }
 
 }
+
+
+
+
 </style>

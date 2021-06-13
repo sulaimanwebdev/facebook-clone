@@ -1,6 +1,6 @@
 <template>
   <q-page class="bg-secondary">
-     <Watchbar />
+     <Watchbar class="vca"/>
    <div class="videos">
    <Videos />
    </div>
@@ -43,4 +43,22 @@ right:20px;
   
 }
 
+@media (max-width:867px){
+  .vca{
+    display: none;
+  }
+  
+.videos{
+  
+ 
+
+  flex-direction: column;
+width: 100%;
+position:absolute;
+
+left: 0;
+
+
+}
+}
 </style>

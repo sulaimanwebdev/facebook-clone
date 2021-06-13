@@ -1,7 +1,7 @@
 <template>
-  <q-layout view="hHh lpR fFf">
+  <q-layout view="hHh lpR fFf" >
 
-    <q-header  class="bg-white text-black">
+    <q-header  class="bg-white text-black"> 
       <q-toolbar class="header q-px-md q-py-sm">
         <div class="header-left">
           <div class="logo">
@@ -15,10 +15,10 @@
 <q-icon name="search" size="23px" class="searchI"/>
         <input type="text" placeholder="Search Facebook" class="bg-secondary">
       </div>
-
-      
-
+    
         </div>
+
+        
 
         <div class="header-mid">
           <q-item clickable to="/" v-ripple exact class="tab" active-class="active">
@@ -72,7 +72,7 @@
 
 
 
-  <q-item v-ripple exact class="tab" active-class="active" clickable>
+  <q-item to="/gaming" v-ripple class="tab" active-class="active" clickable>
             
          
 <q-avatar>
@@ -89,57 +89,607 @@
 
 
         <div class="header-right">
-          <div>
-            <q-avatar size="43px" v-ripple>
+          <q-item to="/sulaiman.dev" v-ripple class="sulaiman" active-class="sulaimanActive" exact>
+            <q-avatar size="45px">
           <img src="../assets/avatar.jpg">
           </q-avatar>
           
-          </div>
+          </q-item>
        
  
-   <div class="q-ml-sm">
-           <q-avatar size="45px"  color="secondary" text-color="black" icon="add" v-ripple class="cli"/>
+   <div class="q-ml-sm dropmenuBtn">
+           <q-avatar size="45px"  color="secondary" text-color="black" icon="add" v-ripple class="cli realbtn"/>
 
             <q-tooltip :offset="[10, 10]">
           Create
         </q-tooltip>
+
+
+
+
+
+
+ <q-menu max-height="100%" min-width="370px" style="padding:0 20px !important;">
+          <q-list style="width:370px;"  class="q-mt-md q-mr-sm dropdownMenu" >
+<div style="display:flex; align-items:center; justify-content:space-between;" class="q-pr-sm">
+            <div style="margin-left:20px; font-weight:bold; font-size:18px; opacity:0.8;">Create</div>
+
+</div>
+      
+
+              
+                
+
+
+
+ <q-item @click="postbtnheader" v-ripple clickable style="padding-left:10px;  padding-top:10px; !important;"  class="q-mt-sm q-mx-sm">
+              <div style="display:flex; align-items:center;">
+            <div>
+                <q-avatar size="43px" icon="edit" class="bg-secondary">
+          
+          </q-avatar>
+            </div>
+            <div class="q-ml-sm">
+                <span class="text-weight-bold" style="opacity:0.8; font-size:15px;">Post</span>
+                <div><span>Share a post on News Feed</span></div>
+            </div>
+            
+       </div>
+            </q-item>
+
+
+
+            
+ <q-item  @click="storybtnheader" v-ripple clickable style="padding-left:10px; margin-bottom:10px;  padding-top:10px; !important;" class="q-mt-sm q-mx-sm">
+              <div style="display:flex; align-items:center;">
+            <div>
+                <q-avatar size="43px" icon="fas fa-book-open" class="bg-secondary">
+          
+          </q-avatar>
+            </div>
+            <div class="q-ml-sm">
+                <span class="text-weight-bold" style="opacity:0.8; font-size:15px;">Story</span>
+                <div><span>Share a photo or write something</span></div>
+            </div>
+            
+       </div>
+
+
+            </q-item>
+
+
+
+
+
+
+
+
+
+
+
+
+            
+          </q-list>
+        </q-menu>
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
           </div>
 
 
 
 
 
-          <div class="q-ml-sm">
-            <q-avatar size="45px" color="secondary" text-color="black" v-ripple>
+
+
+
+
+
+
+
+          <div class="q-ml-sm dropmenuBtn">
+            <q-avatar size="45px" color="secondary" text-color="black" v-ripple class="realbtn">
 <svg viewBox="0 0 28 28" alt="" class="a8c37x1j ms05siws hwsy1cff b7h9ocf4 fzdkajry" height="20" width="20"><path d="M14 2.042c6.76 0 12 4.952 12 11.64S20.76 25.322 14 25.322a13.091 13.091 0 0 1-3.474-.461.956 .956 0 0 0-.641.047L7.5 25.959a.961.961 0 0 1-1.348-.849l-.065-2.134a.957.957 0 0 0-.322-.684A11.389 11.389 0 0 1 2 13.682C2 6.994 7.24 2.042 14 2.042ZM6.794 17.086a.57.57 0 0 0 .827.758l3.786-2.874a.722.722 0 0 1 .868 0l2.8 2.1a1.8 1.8 0 0 0 2.6-.481l3.525-5.592a.57.57 0 0 0-.827-.758l-3.786 2.874a.722.722 0 0 1-.868 0l-2.8-2.1a1.8 1.8 0 0 0-2.6.481Z"></path></svg>
 
             </q-avatar>
             <q-tooltip content-class="" :offset="[10, 10]">
           Messenger
         </q-tooltip>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ <q-menu max-height="100%" min-width="370px" style="padding:0 20px !important;">
+          <q-list style="width:370px; "  class="q-mt-md q-mr-sm dropdownMenu" >
+<div style="display:flex; align-items:center; justify-content:space-between;" class="q-pr-sm">
+            <div style="margin-left:20px; font-weight:bold; font-size:18px; opacity:0.8;">Messenger</div>
+<div>
+
+
+<q-icon name="more_horiz" size="22px" style="cursor:pointer; border-radius:100px;" class="q-pa-xs" v-ripple/>
+<q-icon name="open_in_full" size="16px" style="cursor:pointer; border-radius:100px;" class="q-pa-xs q-ml-sm" v-ripple/>
+<q-icon name="videocam" size="22px" style="cursor:pointer; border-radius:100px;" class="q-pa-xs q-ml-sm" v-ripple/>
+<q-icon name="edit" size="19px" style="cursor:pointer; border-radius:100px;" class="q-pa-xs q-ml-sm" v-ripple/>
+
+
+
+
+</div>
+
+</div>
+            <div class="search bg-secondary q-ml-md q-mr-sm q-my-sm">
+<q-icon name="search" size="23px" class="searchI"/>
+        <input type="text" placeholder="Search Facebook" class="bg-secondary">
+      </div>
+
+                 <q-item  v-ripple clickable style="padding-left:10px;  padding-top:10px; !important;" class="q-mt-xs q-mx-sm">
+              <div style="display:flex; align-items:flex-start;">
+            <div>
+               
+                <q-item style="width:50px; padding:0; height:50px;border-radius:50%; position:relative;">
+          <img src="../assets/elon.jpg" style="width:100%; height:100%; object-fit:cover; object-position:center; border-radius:50%;">
+          </q-item>
+            </div>
+            <div class="q-ml-sm">
+                <span ><span style=" opacity:0.8; font-size:14px;font-weight:600;">Elon Musk</span></span>
+                <div><span style=" font-weight:400; font-size:13px; opacity:0.7; margin-top:5px;">Doge To The Moon</span> <q-icon name="fas fa-circle" size="3px" color="black" class="q-mx-sm q-mr-sm" style="opacity:0.7;"/> <span style=" font-weight:400; font-size:13px; opacity:0.7; margin-top:5px;">36 m</span></div>
+            </div>
+            
+       </div>
+            </q-item>
+
+
+
+
+              <q-item  v-ripple clickable style="padding-left:10px;  padding-top:10px; !important;" class="q-mt-xs q-mx-sm">
+              <div style="display:flex; align-items:flex-start;">
+            <div>
+               
+                <q-item style="width:50px; padding:0; height:50px;border-radius:50%; position:relative;">
+          <img src="../assets/bill.jpg" style="width:100%; height:100%; object-fit:cover; object-position:center; border-radius:50%;">
+          </q-item>
+            </div>
+            <div class="q-ml-sm">
+                <span ><span style=" opacity:0.8; font-size:14px;font-weight:600;">Bill Gates</span></span>
+                <div><span style=" font-weight:400; font-size:13px; opacity:0.7; margin-top:5px;">Nature is our best friend</span> <q-icon name="fas fa-circle" size="3px" color="black" class="q-mx-sm q-mr-sm" style="opacity:0.7;"/> <span style=" font-weight:400; font-size:13px; opacity:0.7; margin-top:5px;">1 h</span></div>
+            </div>
+            
+       </div>
+            </q-item>
+
+
+
+
+
+              <q-item  v-ripple clickable style="padding-left:10px;  padding-top:10px; !important;" class="q-mt-xs q-mx-sm">
+              <div style="display:flex; align-items:flex-start;">
+            <div>
+               
+                <q-item style="width:50px; padding:0; height:50px;border-radius:50%; position:relative;">
+          <img src="../assets/jeff.jpg" style="width:100%; height:100%; object-fit:cover; object-position:center; border-radius:50%;">
+          </q-item>
+            </div>
+            <div class="q-ml-sm">
+                <span ><span style=" opacity:0.8; font-size:14px;font-weight:600;">Jeff Bezos</span></span>
+                <div><span style=" font-weight:400; font-size:13px; opacity:0.7; margin-top:5px;">😂😂😂</span> <q-icon name="fas fa-circle" size="3px" color="black" class="q-mx-sm q-mr-sm" style="opacity:0.7;"/> <span style=" font-weight:400; font-size:13px; opacity:0.7; margin-top:5px;">1.5 h</span></div>
+            </div>
+            
+       </div>
+            </q-item>
+
+
+
+
+
+
+
+
+
+
+<q-item  v-ripple clickable style="padding-left:10px; margin-bottom:10px;  padding-top:10px; !important;" class="q-mt-xs q-mx-sm">
+              <div style="display:flex; align-items:flex-start;">
+            <div>
+               
+                <q-item style="width:50px; padding:0; height:50px;border-radius:50%; position:relative;">
+          <img src="../assets/warren.jpg" style="width:100%; height:100%; object-fit:cover; object-position:center; border-radius:50%;">
+          </q-item>
+            </div>
+            <div class="q-ml-sm">
+                <span ><span style=" opacity:0.8; font-size:14px;font-weight:600;">Warren Buffet</span></span>
+                <div><span style=" font-weight:400; font-size:13px; opacity:0.7; margin-top:5px;">It's been an ideal period for investors</span> <q-icon name="fas fa-circle" size="3px" color="black" class="q-mx-sm q-mr-sm" style="opacity:0.7;"/> <span style=" font-weight:400; font-size:13px; opacity:0.7; margin-top:5px;">3 h</span></div>
+            </div>
+            
+       </div>
+            </q-item>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            
+          </q-list>
+        </q-menu>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
           </div>
 
 
 
-           <div class="q-ml-sm">
-            <q-avatar size="45px" font-size="23px" color="secondary" text-color="black" v-ripple>
+           <div class="q-ml-sm notificationIcon dropmenuBtn">
+            <q-avatar size="45px" font-size="23px" color="secondary" text-color="black" v-ripple class="realbtn">
 <svg viewBox="0 0 28 28" alt="" class="a8c37x1j ms05siws hwsy1cff b7h9ocf4 fzdkajry" height="20" width="20"><path d="M7.847 23.488C9.207 23.488 11.443 23.363 14.467 22.806 13.944 24.228 12.581 25.247 10.98 25.247 9.649 25.247 8.483 24.542 7.825 23.488L7.847 23.488ZM24.923 15.73C25.17 17.002 24.278 18.127 22.27 19.076 21.17 19.595 18.724 20.583 14.684 21.369 11.568 21.974 9.285 22.113 7.848 22.113 7.421 22.113 7.068 22.101 6.79 22.085 4.574 21.958 3.324 21.248 3.077 19.976 2.702 18.049 3.295 17.305 4.278 16.073L4.537 15.748C5.2 14.907 5.459 14.081 5.035 11.902 4.086 7.022 6.284 3.687 11.064 2.753 15.846 1.83 19.134 4.096 20.083 8.977 20.506 11.156 21.056 11.824 21.986 12.355L21.986 12.356 22.348 12.561C23.72 13.335 24.548 13.802 24.923 15.73Z"></path></svg>
            <q-badge color="red" rounded floating>5</q-badge>
             </q-avatar>
              <q-tooltip content-class="" :offset="[10, 10]">
           Notifications
         </q-tooltip>
+
+
+
+
+
+
+
+
+        <q-menu max-height="100%" min-width="370px" style="padding:0 20px !important;">
+          <q-list style="width:370px; "  class="q-mt-md q-mr-sm dropdownMenu">
+<div style="display:flex; align-items:center; justify-content:space-between;" class="q-pr-sm">
+            <div class="q-ml-md" style="font-weight:bold; font-size:18px; opacity:0.8;">Notifications</div>
+<q-icon name="more_horiz" size="25px" style="cursor:pointer; border-radius:100px;" class="q-pa-xs" v-ripple/>
+</div>
+            <div class="q-ml-md" style="font-weight:bold; font-size:16px; opacity:0.8; margin-top:10px;">New</div>
+
+                 <q-item  v-ripple clickable style="padding-left:10px;  padding-top:10px; !important;" class="q-mt-xs q-mx-sm">
+              <div style="display:flex; align-items:flex-start;">
+            <div>
+               
+                <q-item style="width:50px; padding:0; height:50px;border-radius:50%; position:relative;">
+          <img src="../assets/elon.jpg" style="width:100%; height:100%; object-fit:cover; object-position:center; border-radius:50%;">
+          <img src="../assets/favorite.svg" alt="" style="position:absolute; bottom:-5px; right:0px; width:20px;">
+          </q-item>
+            </div>
+            <div class="q-ml-sm">
+                <span ><span style=" opacity:0.8; font-size:14px;font-weight:600;">Elon Musk</span> reacted to your comment "#Dogetothemoon"</span>
+                <div><span style="color:#1877F2; font-weight:500; font-size:13px; margin-top:5px;">41 minutes ago</span></div>
+            </div>
+            
+       </div>
+            </q-item>
+
+
+
+            <div class="q-ml-md" style="font-weight:bold; font-size:16px; opacity:0.8; margin-top:10px;">Earlier</div>
+
+
+
+
+  <q-item  v-ripple clickable style="padding-left:10px;  padding-top:10px; !important;" class="q-mt-xs q-mx-sm">
+              <div style="display:flex; align-items:flex-start;">
+            <div>
+               
+                <q-item style="width:50px; padding:0; height:50px;border-radius:50%; position:relative;">
+          <img src="../assets/page.jpg" style="width:100%; height:100%; object-fit:cover; object-position:center; border-radius:50%;">
+          <q-icon name="flag" color="white" size="18px" style="padding:6px 5px; background-color:#EE7315; border-radius:100px;  position:absolute; bottom:-10px; right:0px; width:20px;" />
+          </q-item>
+            </div>
+            <div class="q-ml-sm">
+                <span >Share updates about <span style=" opacity:0.8; font-size:14px;font-weight:600;">Sulaiman Web Dev</span> by creating a new post, photo or video</span>
+                <div><span style="color:#1877F2; font-weight:500; font-size:13px; margin-top:5px;">2 hours ago</span></div>
+            </div>
+            
+       </div>
+            </q-item>
+
+
+
+
+
+
+
+
+
+    <q-item  v-ripple clickable style="padding-left:10px;  padding-top:10px; !important;" class="q-mt-xs q-mx-sm">
+              <div style="display:flex; align-items:flex-start;">
+            <div>
+               
+                <q-item style="width:50px; padding:0; height:50px;border-radius:50%; position:relative;">
+          <img src="../assets/jeff.jpg" style="width:100%; height:100%; object-fit:cover; object-position:center; border-radius:50%;">
+          <img src="../assets/like.svg" alt="" style="position:absolute; bottom:-5px; right:0px; width:20px;">
+          </q-item>
+            </div>
+            <div class="q-ml-sm">
+                <span ><span style=" opacity:0.8; font-size:14px;font-weight:600;">Jeff Bezos</span> reacted to your photo.</span>
+                <div><span style="color:#1877F2; font-weight:500; font-size:13px; margin-top:5px;">2.5 hours ago</span></div>
+            </div>
+            
+       </div>
+            </q-item>
+
+
+
+
+
+
+
+    <q-item  v-ripple clickable style="padding-left:10px;  padding-top:10px; !important;" class="q-mt-xs q-mx-sm">
+              <div style="display:flex; align-items:flex-start;">
+            <div>
+               
+                <q-item style="width:50px; padding:0; height:50px;border-radius:50%; position:relative;">
+          <img src="../assets/bill.jpg" style="width:100%; height:100%; object-fit:cover; object-position:center; border-radius:50%;">
+          <img src="../assets/favorite.svg" alt="" style="position:absolute; bottom:-5px; right:0px; width:20px;">
+          </q-item>
+            </div>
+            <div class="q-ml-sm">
+                <span ><span style=" opacity:0.8; font-size:14px;font-weight:600;">Bill Gates</span> reacted to your post.</span>
+                <div><span style="color:#1877F2; font-weight:500; font-size:13px; margin-top:5px;">3 hours ago</span></div>
+            </div>
+            
+       </div>
+            </q-item>
+
+
+
+
+
+
+
+
+
+            
+    <q-item  v-ripple clickable style="margin-bottom:10px; padding-left:10px;  padding-top:10px; !important;" class="q-mt-xs q-mx-sm">
+              <div style="display:flex; align-items:flex-start;">
+            <div>
+               
+                <q-item style="width:50px; padding:0; height:50px;border-radius:50%; position:relative;">
+          <img src="../assets/elon.jpg" style="width:100%; height:100%; object-fit:cover; object-position:center; border-radius:50%;">
+          <img src="../assets/gift.png" alt="" style="position:absolute; bottom:-5px; right:0px; width:30px;">
+          </q-item>
+            </div>
+            <div class="q-ml-sm">
+                <span >Today is <span style=" opacity:0.8; font-size:14px;font-weight:600;">Elon Musk's </span> brithday</span>
+                <div><span style="color:#1877F2; font-weight:500; font-size:13px; margin-top:5px;">4 hours ago</span></div>
+            </div>
+            
+       </div>
+            </q-item>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            
+          </q-list>
+        </q-menu>
+
+
+
+
+
+
+
+
+
+
+
+
+
           </div>
 
 
-           <div class="q-ml-sm">
-<q-avatar size="45px" font-size="23px" color="secondary" text-color="black" icon="expand_more" v-ripple/>
+           <div class="q-ml-sm dropmenuBtn" style="padding:0 !important;">
+<q-avatar size="45px" font-size="23px" :color="btncolor" :text-color="iconcolor" icon="expand_more" v-ripple class="realbtn" />
         <q-tooltip content-class="" :offset="[10, 10]">
           Account
         </q-tooltip>
+
+        <q-menu max-height="100%" min-width="370px" class="kkk" style="padding:0 20px !important; " >
+          <q-list style="width:370px; " class="dropdownMenu">
+                 <q-item  v-ripple clickable style="padding-left:10px;  padding-top:10px; !important;" class="q-mt-sm q-mx-sm">
+              <div style="display:flex; align-items:center;">
+            <div>
+                <q-avatar size="50px">
+          <img src="../assets/avatar.jpg">
+          </q-avatar>
+            </div>
+            <div class="q-ml-sm">
+                <span class="text-weight-medium" style="opacity:0.8; font-size:19px;">Muhammad Sulaiman</span>
+                <div><span>See Your Profile</span></div>
+            </div>
+            
+       </div>
+            </q-item>
+
+ <hr style="opacity:0.5;width:90% !important;">
+
+
+
+
+
+ <q-item v-ripple clickable style="padding-left:10px;  padding-top:10px; !important;" class="q-mt-sm q-mx-sm">
+              <div style="display:flex; align-items:center;">
+            <div>
+                <q-avatar size="43px" icon="announcement" class="bg-secondary">
+          
+          </q-avatar>
+            </div>
+            <div class="q-ml-sm">
+                <span class="text-weight-bold" style="opacity:0.8; font-size:15px;">Give Feedback</span>
+                <div><span>Help Us Improve The New Facebook</span></div>
+            </div>
+            
+       </div>
+            </q-item>
+
+
+
+
+
+
+ <hr style="opacity:0.5;width:90% !important;">
+
+
+
+
+
+
+
+ <q-item  v-ripple clickable style="  display:flex; align-items:center; justify-content:space-between; padding-left:10px;  padding-top:10px; !important;" class="q-mt-sm q-mx-sm">
+              <div style="display:flex; width:100%; align-items:center;">
+            <div>
+                <q-avatar size="43px" icon="settings" class="bg-secondary">
+          
+          </q-avatar>
+            </div>
+            <div class="q-ml-sm">
+                <span class="text-weight-bold" style="opacity:0.8; font-size:15px;">Settings & Privacy</span>
+            </div>
+            
+       </div>
+
+       <q-icon name="arrow_forward_ios" size="20px" style="opacity:0.7;"/>
+            </q-item>
+
+
+
+
+ <q-item v-ripple clickable style="display:flex; align-items:center; justify-content:space-between; padding-left:10px;  padding-top:10px; !important;" class=" q-mx-sm">
+              <div style="display:flex; width:100%; align-items:center;">
+            <div>
+                <q-avatar size="43px" icon="help" class="bg-secondary">
+          
+          </q-avatar>
+            </div>
+            <div class="q-ml-sm">
+                <span class="text-weight-bold" style="opacity:0.8; font-size:15px;">Help & Support</span>
+            </div>
+            
+       </div>
+
+       <q-icon name="arrow_forward_ios" size="20px" style="opacity:0.7;"/>
+            </q-item>
+
+
+
+
+
+
+
+
+ <q-item v-ripple clickable style="display:flex; align-items:center; justify-content:space-between; padding-left:10px;  padding-top:10px; !important;" class=" q-mx-sm">
+              <div style="display:flex; width:100%; align-items:center;">
+            <div>
+                <q-avatar size="43px" icon="dark_mode" class="bg-secondary">
+          
+          </q-avatar>
+            </div>
+            <div class="q-ml-sm">
+                <span class="text-weight-bold" style="opacity:0.8; font-size:15px;">Display & Accessibility</span>
+            </div>
+            
+       </div>
+
+       <q-icon name="arrow_forward_ios" size="20px" style="opacity:0.7;"/>
+            </q-item>
+
+
+
+
+ <q-item v-ripple clickable style="margin-bottom:10px; display:flex; align-items:center; justify-content:space-between; padding-left:10px;  padding-top:10px; !important;" class=" q-mx-sm">
+              <div style="display:flex; width:100%; align-items:center;">
+            <div>
+                <q-avatar size="43px" icon="logout" class="bg-secondary">
+          
+          </q-avatar>
+            </div>
+            <div class="q-ml-sm">
+                <span class="text-weight-bold" style="opacity:0.8; font-size:15px;">Log Out</span>
+            </div>
+            
+       </div>
+
+            </q-item>
+
+
+
+
+
+
+
+
+            
+          </q-list>
+        </q-menu>
           </div>
 
-         
+        
+
+        
 
 
         </div>
@@ -150,7 +700,7 @@
     </q-header>
 
     <q-page-container>
-      <router-view />
+      <router-view/>
     </q-page-container>
 
   </q-layout>
@@ -158,15 +708,36 @@
 
 <script>
 export default {
-  
-  data () {
-    return {
-    }
+
+data(){
+  return{
+    btncolor: 'secondary',
+    iconcolor: 'black'
   }
+},
+
+ methods: {
+
+
+        postbtnheader() {
+            this.$root.$refs.post.foo();
+        },
+
+
+
+
+         storybtnheader() {
+            this.$root.$refs.story.foo();
+            
+            
+        },
+
+
+    },
 
   
-  
 }
+  
 
 
 </script>
@@ -176,6 +747,7 @@ export default {
 @media (max-width:1105px){
 input{
   display: none !important;
+ 
 }
 
 .search{
@@ -186,7 +758,33 @@ input{
   height: 44px;
   width: 44px;
   padding-left: 0px;
+  
   }
 
 }
+
+.uploadStory{
+ opacity: 0.0; position: absolute; top: 0; left: 0; bottom: 0; right: 0; width: 100%; height:100%;
+ border-radius: 15px;
+ cursor: pointer;
+}
+
+@media (max-width:621px){
+  .dropdownMenu{
+    display: none;
+  }
+
+
+  
+}
+.sulaiman{
+  padding:0;
+  border-radius: 100px;
+  margin-top: 3px;
+}
+.sulaimanActive{
+  padding:2px;
+  box-shadow: 0 0 0 2px #1877F2ed;
+}
+
 </style>

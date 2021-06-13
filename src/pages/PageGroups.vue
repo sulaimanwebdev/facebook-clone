@@ -1,6 +1,6 @@
 <template>
      <q-page class="bg-secondary">
-     <Groupsbar />
+     <Groupsbar class="Groupsbar"/>
    <div class="groupPosts">
    <Groupsposts />
    </div>
@@ -41,5 +41,34 @@ top:-30px;
 right:70px;
 
   
+}
+
+
+
+
+@media (max-width:1116px){
+.groupPosts{
+  width: calc(100% - 350px);
+position:absolute;
+top:-30px;
+right:30px;
+    
+}
+
+}
+
+
+@media (max-width:867px){
+.Groupsbar{
+  display: none;
+}
+
+.groupPosts{
+  width: 100%;
+position:absolute;
+top:-30px;
+left:0px;
+    
+}
 }
 </style>

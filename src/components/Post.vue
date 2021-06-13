@@ -1,6 +1,25 @@
 <template>
 <div>
-    <div class="postCont" >
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div class="postCont" style="margin-top:10px;">
         <div class="top ">
            <q-item  clickable class="" >
         <div class="imgCont">
@@ -73,6 +92,109 @@
       </div>
     </div>
     
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div class="postCont" style="margin-top:10px;">
+        <div class="top ">
+           <q-item  clickable class="" >
+        <div class="imgCont">
+            
+            <img src="../assets/avatar.jpg">
+           
+        </div>
+        
+
+        <q-item-section>
+          <q-item-label class="text-weight-bold"><span style="opacity:0.9;">Muhammad Sulaiman (You)</span> <span class="q-pl-sm" style="opacity:0.7; font-weight:400;">updated his profile photo</span></q-item-label>
+          <q-item-label caption lines="1">2 Hours <q-icon name="fas fa-circle" size="3px" color="black" class="q-mx-xs q-mr-sm" style="opacity:0.7;"/> <q-icon name="public" color="black" style="opacity:0.7;"/></q-item-label>
+        </q-item-section>
+
+        <q-item-section side>
+          <q-icon name="more_horiz" color="black" style="opacity:0.8;"/>
+
+        </q-item-section>
+       
+      </q-item>
+
+        </div>
+
+        
+        <div class="fullimgCont"  style="Muhammad Sulaiman Profile Photo">
+            <img src="../assets/avatarpost.jpg" alt="Muhamad Sulaiman Post" />
+        </div>
+        <div class="bottom">
+            <div class="flex1">
+                <div class="ffA">
+                               <q-avatar size="45px"   text-color="primary" icon="thumb_up"/>
+                                <q-avatar size="45px"   text-color="red" icon="favorite"/>
+                                 <q-avatar size="45px"   text-color="yellow" icon="emoji_emotions"/>
+                                 <span class="likes">25k</span>
+
+                </div>
+                <div class="ffB">
+                   <span style="opacity:0.8;">12K comments</span>
+                </div>
+            </div>
+        </div>
+      
+       <q-separator class="q-mx-md"/>
+      <div class="interaction">
+<q-item clickable v-ripple>
+       <div class="iitemlfex">
+           <q-avatar icon="thumb_up_off_alt" size="50px" style="opacity:0.8;"/> 
+           <div class="content text-weight-bold" style="opacity:0.7;">Like</div>
+       </div>
+      </q-item>
+
+      <q-item clickable v-ripple>
+       <div class="iitemlfex">
+          <q-avatar icon="chat_bubble_outline" size="50px" style="opacity:0.8;"/>
+           <div class="content text-weight-bold" style="opacity:0.7;">Comment</div>
+       </div>
+      </q-item>
+
+      <q-item clickable v-ripple>
+       <div class="iitemlfex">
+            <q-avatar icon="share" size="50px" style="opacity:0.8;"/>
+           <div class="content text-weight-bold" style="opacity:0.7;">Share</div>
+       </div>
+      </q-item>
+
+
+      </div>
+    </div>
+    
+
+
+
+
+
+
+
+
+
 
 
 
@@ -250,7 +372,7 @@
 
         </div>
         <div class="fullimgCont">
-            <img src="../assets/warrenSt.jpg" alt="Elon Musk Post">
+            <img src="../assets/warrenSt.jpg" alt="Warren Buffet's Post">
         </div>
         <div class="bottom">
             <div class="flex1">
@@ -468,7 +590,8 @@
 <script>
 
 export default {
-    name: 'Post'
+    name: 'Post',
+
 }
 </script>
 

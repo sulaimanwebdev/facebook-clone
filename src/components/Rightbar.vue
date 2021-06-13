@@ -93,7 +93,7 @@
 
 
 
- <q-item clickable v-ripple class="q-mt-md">
+ <q-item clickable v-ripple class="q-mt-md" >
         <q-item-section avatar>
           <q-avatar size="30px">
           <img src="../assets/gift.png" alt="Icon">
@@ -132,7 +132,7 @@
 
 
   
- <q-item clickable v-ripple class="q-mt-sm">
+ <q-item clickable v-ripple class="q-mt-sm" to="/elonmusk">
         <q-item-section avatar>
           <q-avatar size="34px">
           <img src="../assets/elon.jpg" alt="Profile">
@@ -147,7 +147,7 @@
 
 
   
- <q-item clickable v-ripple class="q-mt-sm">
+ <q-item clickable v-ripple class="q-mt-sm" to="/warrenbuffet">
         <q-item-section avatar>
           <q-avatar size="34px">
           <img src="../assets/warren.jpg" alt="Profile">
@@ -163,7 +163,7 @@
 
 
       
- <q-item clickable v-ripple class="q-mt-sm">
+ <q-item clickable v-ripple class="q-mt-sm" to="/jeffbezos">
         <q-item-section avatar>
           <q-avatar size="34px">
           <img src="../assets/jeff.jpg" alt="Profile">
@@ -177,7 +177,7 @@
 
 
         
- <q-item clickable v-ripple class="q-mt-sm">
+ <q-item clickable v-ripple class="q-mt-sm" to="billgates">
         <q-item-section avatar>
           <q-avatar size="34px">
           <img src="../assets/bill.jpg" alt="Profile">
@@ -190,7 +190,7 @@
 
 
         
- <q-item clickable v-ripple class="q-mt-sm">
+ <q-item clickable v-ripple class="q-mt-sm" to="/larrypage">
    
         <q-item-section avatar>
           <q-avatar size="34px">
@@ -204,7 +204,7 @@
 
 
      
- <q-item clickable v-ripple class="q-mt-sm">
+ <q-item clickable v-ripple class="q-mt-sm" to="mark">
         <q-item-section avatar>
           <q-avatar size="34px">
           <img src="../assets/mark.jpg" alt="Profile">

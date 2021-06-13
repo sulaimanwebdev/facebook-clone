@@ -9,8 +9,12 @@
   body{
     background-color: #F0F2F5;
 overflow-x: hidden;
-
   }
+
+
+
+  
+
   .logo{
     margin-right: 10px;
     cursor: pointer;
@@ -25,6 +29,7 @@ overflow-x: hidden;
   .header{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+    
   
   }
 
@@ -72,6 +77,15 @@ overflow-x: hidden;
   .header-mid .q-item:hover{
     background-color: rgb(231, 231, 231);
   }
+
+
+  
+  .header-mid .q-item{
+    background-color: white !important;
+  }
+
+
+  
   
   .active svg{
     fill: #1877F2;
@@ -297,9 +311,47 @@ overflow-x: hidden;
         
         }
        .header-mid{
-         display: none;
+         position: absolute;
+         top: 65px;
+         left: 0;
+         background-color: white;
+         width: 100%;
+         border-bottom: 1px solid rgba(192, 192, 192, 0.432);
+
+
        }
+
+
+       .active::before{
+        content: "";
+        position: absolute;
+        bottom: 0px;
+        left: 0;
+        width: 100%;
+        height: 3px;
+        background-color: #1877F2;
         }
+        
+
+        
+.header{
+margin-bottom: 50px;
+padding-top: 12px;
+}
+
+
+
+        }
+
+
+
+        @media (max-width:400px){
+         .notificationIcon{
+           display: none;
+         }
+        }
+
+
 
 
 
