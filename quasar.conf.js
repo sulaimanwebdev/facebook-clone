@@ -122,27 +122,27 @@ module.exports = function (/* ctx */) {
         theme_color: '#027be3',
         icons: [
           {
-            src: 'icons/icon-128x128.png',
+            src: '/dist/spa/favicon.png',
             sizes: '128x128',
             type: 'image/png'
           },
           {
-            src: 'icons/icon-192x192.png',
+            src: '/dist/spa/favicon.png',
             sizes: '192x192',
             type: 'image/png'
           },
           {
-            src: 'icons/icon-256x256.png',
+            src: '/dist/spa/favicon.png',
             sizes: '256x256',
             type: 'image/png'
           },
           {
-            src: 'icons/icon-384x384.png',
+            src: '/dist/spa/favicon.png',
             sizes: '384x384',
             type: 'image/png'
           },
           {
-            src: 'icons/icon-512x512.png',
+            src: '/dist/spa/favicon.png',
             sizes: '512x512',
             type: 'image/png'
           }
@@ -180,7 +180,7 @@ module.exports = function (/* ctx */) {
       builder: {
         // https://www.electron.build/configuration/configuration
 
-        appId: 'facebook-fixed-clone'
+        appId: 'facebook-clone'
       },
 
       // More info: https://v1.quasar.dev/quasar-cli/developing-electron-apps/node-integration
