@@ -288,7 +288,7 @@ export default {
       max-width: 720px;
     margin:20px auto;
     width: 100%;
-    padding: 0 20px;
+    padding: 0 10px;
     
 }
 .coverPhoto{
