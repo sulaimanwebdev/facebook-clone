@@ -13,6 +13,8 @@ module.exports = function (/* ctx */) {
     // https://v1.quasar.dev/quasar-cli/supporting-ts
     supportTS: false,
 
+  
+
     // https://v1.quasar.dev/quasar-cli/prefetch-feature
     // preFetch: true,
 
