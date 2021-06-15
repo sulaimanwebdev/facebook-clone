@@ -13,7 +13,7 @@ module.exports = function (/* ctx */) {
     // https://v1.quasar.dev/quasar-cli/supporting-ts
     supportTS: false,
 
-  
+    publicPath: '/facebook-clone/',
 
     // https://v1.quasar.dev/quasar-cli/prefetch-feature
     // preFetch: true,
