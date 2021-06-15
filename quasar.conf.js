@@ -10,10 +10,10 @@ const ESLintPlugin = require('eslint-webpack-plugin')
 
 module.exports = function (/* ctx */) {
   return {
+		publicPath: process.env.NODE_ENV === "production" ? "/facebook-clone/" : "/",
     // https://v1.quasar.dev/quasar-cli/supporting-ts
     supportTS: false,
 
-    publicPath: '/facebook-clone/',
 
     // https://v1.quasar.dev/quasar-cli/prefetch-feature
     // preFetch: true,
